@@ -1,0 +1,7 @@
+public class InsideOut {
+
+	public String unscramble(String line) {
+		return null;
+	}
+
+}

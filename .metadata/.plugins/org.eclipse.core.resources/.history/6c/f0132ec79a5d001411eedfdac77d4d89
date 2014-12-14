@@ -1,0 +1,7 @@
+public class VLNString {
+
+	public String makeAcronym(String longName) {
+		return null;
+	}
+
+}

@@ -1,0 +1,7 @@
+public class SignatureDecorator {
+
+	public String applyDecoration(String name, String[] commands, String[] decorations) {
+		return null;
+	}
+
+}

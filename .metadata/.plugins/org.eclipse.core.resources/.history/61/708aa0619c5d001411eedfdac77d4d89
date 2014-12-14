@@ -1,0 +1,7 @@
+public class ProfitCalculator {
+
+	public int percent(String[] items) {
+		return 0;
+	}
+
+}

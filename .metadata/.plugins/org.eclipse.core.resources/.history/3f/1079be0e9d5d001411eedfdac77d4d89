@@ -1,0 +1,16 @@
+public class ProfitCalculator {
+
+	public int percent(String[] items) {
+		double costs = 0.0;
+		double sales = 0.0;
+		for(String i : items) {
+			costs += Double.parseDouble(i.split(" ")[0]);
+			System.out.println(costs);
+			sales += Double.parseDouble(i.split(" ")[1]);
+			System.out.println(sales);
+		}
+		//System.out.println(costs/sales)
+		return (int)((sales - costs)/costs * 100 * -1);
+	}
+
+}

@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class Highscore {
+
+	public int getRank(int[] scores, int newscore, int places) {
+		ArrayList<Integer> allScores = new ArrayList<Integer>();
+		allScores.add(newscore);
+		for(int i = 0; i < scores.length; i++) {
+			allScores.add(scores[i]);
+		}
+		return 0;
+	}
+}

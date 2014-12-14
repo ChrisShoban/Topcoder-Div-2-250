@@ -1,0 +1,13 @@
+public class Highscore {
+
+	public int getRank(int[] scores, int newscore, int places) {
+		int rank = 1;
+		for(int i = 0; i < scores.length; i++) {
+			if(newscore > scores[i]) {
+				return i + 1;
+			}
+		}
+		return 1;
+	}
+
+}

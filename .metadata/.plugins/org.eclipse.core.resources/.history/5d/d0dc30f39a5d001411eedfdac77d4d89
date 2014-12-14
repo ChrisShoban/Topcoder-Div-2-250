@@ -1,0 +1,14 @@
+public class VLNString {
+
+	public String makeAcronym(String longName) {
+		String[] words = longName.split("/s");
+		String result = "";
+		for(String word : words) {
+			if(!word.equals("of") && !word.equals("the") && !word.equals("and")) {
+				result += word.toUpperCase().charAt(0);
+			}
+		}
+		return result;
+	}
+
+}

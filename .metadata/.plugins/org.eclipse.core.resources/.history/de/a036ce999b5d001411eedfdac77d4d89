@@ -1,0 +1,7 @@
+public class StringCompare {
+
+	public int simpleDifference(String a, String b) {
+		return 0;
+	}
+
+}

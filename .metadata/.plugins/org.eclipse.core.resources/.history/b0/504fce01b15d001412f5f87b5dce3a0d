@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Highscore {
+
+	public int getRank(int[] scores, int newscore, int places) {
+		ArrayList<Integer> allScores = new ArrayList<Integer>();
+		allScores.add(newscore);
+		for(int i = 0; i < scores.length; i++) {
+			allScores.add(scores[i]);
+		}
+		Collections.sort(allScores);
+		int rank = 1;
+		int rankAdder = 1;
+		for(int i = 0; i < allScores.size(); i++) {
+			if(i > 0 && allScores.get(i) != allScores.get(i - 1)) {
+				rank += rankAdder;
+				rankAdder = 1;
+			}
+			else {
+				rankAdder++;
+			}
+			if(allScores.get(i) == newscore) {
+				if(i >= places) {
+					return -1;
+				}
+				else {
+					return rank;
+				}
+			}
+		}
+		return 0;
+	}
+}

@@ -1,0 +1,7 @@
+public class Highscore {
+
+	public int getRank(int[] scores, int newscore, int places) {
+		return 0;
+	}
+
+}
